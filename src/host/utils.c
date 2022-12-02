@@ -48,32 +48,6 @@ char* parse_sdsoc_command_line_args(
     return outFile;
 }
 
-//void parse_sdaccel_command_line_args(
-//        int argc,
-//        char** argv,
-//        std::string& kernelFile,
-//std::string& outFile)
-//{
-//
-//int c = 0;
-//
-//while ((c = getopt(argc, argv, "f:o:")) != -1)
-//{
-//switch (c)
-//{
-//case 'f':
-//kernelFile = optarg;
-//break;
-//case 'o':
-//outFile = optarg;
-//break;
-//default:
-//{
-//print_usage(argv[0]);
-//exit(-1);
-//}
-//} // matching on arguments
-//} // while args present
-//}
+
 
 

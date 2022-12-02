@@ -27,11 +27,9 @@ void check_results( int result_size,
                     char* outFile)
 {
     FILE *ofile=NULL;
-//    ofile.open("outputs.txt");
     ofile=fopen("outputs.txt","w");
     if (ofile!=NULL)
     {
-//        ofile << "\nresult_size = " << result_size << std::endl;
         fprintf(ofile,"\nresult_size = %d \n",result_size);
 
         MyRect result[RESULT_SIZE];
@@ -46,13 +44,10 @@ void check_results( int result_size,
 
         for( int i=0 ; i < result_size ; i++ )
         {
-//            ofile << "\n [Test Bench (main) ] detected rects: ";
             fprintf(ofile, "\n [Test Bench (main) ] detected rects: ");
-//            ofile << result[i].x << " " << result[i].y << " " << result[i].width << " " << result[i].height;
             fprintf(ofile, "%d %d %d %d", result[i].x, result[i].y, result[i].width, result[i].height);
             fprintf(ofile, "\n");
         }
-//        ofile.close();
         fclose(ofile);
 
         printf("\n-- saving output image [Start] --\r\n");
